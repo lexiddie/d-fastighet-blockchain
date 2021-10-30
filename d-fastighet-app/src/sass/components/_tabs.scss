@@ -1,0 +1,66 @@
+/*------------------------------------
+    Tabs
+------------------------------------*/
+
+.nav-tabs-wrapper {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px;
+    height: 50px;
+}
+
+.tabs-scroller {
+    display: none;
+    padding: 4px;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.ks-tabs {
+    position:absolute;
+    left:0px;
+    top:0px;
+  	min-width:3000px;
+    margin-top:0px;
+    border-bottom: 2px solid $white-lighter;
+    @include px-to-rem(margin-bottom, 15px);
+
+    .nav-item {
+
+        position:relative;
+        display:table-cell;
+        margin: 0 1.25rem;
+        vertical-align:middle;
+        text-align:center;
+        cursor:grab;
+        cursor:-webkit-grab;
+
+        &:first-child{
+            margin: 0 1.25rem 0 0;
+        }
+        
+        .nav-link {
+            padding: 0 0 0.2rem 0;
+            color: inherit;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 0;
+        }
+
+        .nav-link.active {
+            margin-bottom: -1px;
+            color: $primary;
+            background-color: transparent;
+            font-weight: 700;
+            border: none;
+            border-bottom: 2px solid $primary;
+        }
+    }
+}
+
+.tab-content {
+    margin-bottom: 2.5rem;
+}

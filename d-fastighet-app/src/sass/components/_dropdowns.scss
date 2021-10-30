@@ -1,0 +1,49 @@
+/*------------------------------------
+    Dropdown
+------------------------------------*/
+
+.dropdown-content {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  min-width: 160px;
+  background-color: $white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  a {
+    display: block;
+    padding: 12px 16px;
+    color: $black;
+    text-decoration: none;
+    @include px-to-rem(font-size, 12px);
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $white-light;
+    }
+  }
+
+  h4 {
+    padding: 0 15px;
+    color: $black;
+    @include px-to-rem(font-size, 13px);
+  }
+
+  &--right {
+    top: 0;
+    left: 2.857rem;
+    text-align: left;
+    text-transform: capitalize;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+}

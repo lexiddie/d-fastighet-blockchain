@@ -1,0 +1,33 @@
+.organization-preview {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+
+  > div {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    > div:nth-child(1).transaction-profile {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      > div {
+        width: 800px;
+        height: auto;
+        display: flex;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+/*----------------------------------------------
+    Alignments
+----------------------------------------------*/
+
+/* Position
+Utilities for controlling how an element is positioned in the DOM. */
+.position {
+  &-static {
+    position: static;
+  }
+  &-fixed {
+    position: fixed;
+  }
+  &-absolute {
+    position: absolute;
+  }
+  &-relative {
+    position: relative;
+  }
+  &-sticky {
+    position: sticky;
+  }
+}
+
+/* Display
+Utilities for controlling the display box type of an element. */
+.display {
+  &-block {
+    display: block;
+  }
+  &-inline-block {
+    display: inline-block;
+  }
+  &-inline {
+    display: inline;
+  }
+  &-flex {
+    display: flex;
+  }
+  &-inline-flex {
+    display: inline-flex;
+  }
+  &-table {
+    display: table;
+  }
+  &-table-row {
+    display: table-row;
+  }
+  &-table-cell {
+    display: table-cell;
+  }
+  &-none {
+    display: none;
+  }
+}
+
+/* Flex Direction for parent */
+.flex-direction {
+  &-row {
+    flex-direction: row;
+  }
+  &-row-reverse {
+    flex-direction: row-reverse;
+  }
+  &-column {
+    flex-direction: column;
+  }
+  &-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Flex Wrap for parent */
+.flex-wrap {
+  &-nowrap {
+    flex-wrap: nowrap;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  &-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+/* Flex for child */
+.flex {
+  &-initial {
+    flex: 0 1 auto;
+  }
+  &-1 {
+    flex: 1 1 0%;
+  }
+  &-auto {
+    flex: 1 1 auto;
+  }
+  &-none {
+    flex: none;
+  }
+}
+
+/* Vertical Alignment for child */
+.vertical-align {
+  &-baseline {
+    vertical-align: baseline;
+  }
+  &-top {
+    vertical-align: top;
+  }
+  &-middle {
+    vertical-align: middle;
+  }
+  &-bottom {
+    vertical-align: bottom;
+  }
+  &-top {
+    vertical-align: text-top;
+  }
+  &-bottom {
+    vertical-align: text-bottom;
+  }
+}
+
+/* Align Items for parent */
+.align-items {
+  &-stretch {
+    align-items: stretch;
+  }
+  &-flex-start {
+    align-items: flex-start;
+  }
+  &-center {
+    align-items: center;
+  }
+  &-flex-end {
+    align-items: flex-end;
+  }
+  &-baseline {
+    align-items: baseline;
+  }
+}
+
+/* Align Content for parent */
+.align-content {
+  &-flex-start {
+    align-content: flex-start;
+  }
+  &-center {
+    align-content: center;
+  }
+  &-flex-end {
+    align-content: flex-end;
+  }
+  &-space-between {
+    align-content: space-between;
+  }
+  &-space-around {
+    align-content: space-around;
+  }
+}
+
+/* Align Self for child */
+.align-self {
+  &-auto {
+    align-self: auto;
+  }
+  &-flex-start {
+    align-self: flex-start;
+  }
+  &-center {
+    align-self: center;
+  }
+  &-flex-end {
+    align-self: flex-end;
+  }
+  &-stretch {
+    align-self: stretch;
+  }
+}
+
+/* Justify Content for parent */
+.justify-content {
+  &-flex-start {
+    justify-content: flex-start;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-flex-end {
+    justify-content: flex-end;
+  }
+  &-space-between {
+    justify-content: space-between;
+  }
+  &-space-around {
+    justify-content: space-around;
+  }
+}

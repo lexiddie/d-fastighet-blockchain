@@ -1,0 +1,289 @@
+/*------------------------------------
+    Table
+------------------------------------*/
+
+.table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  thead {
+    // padding-left: 10px;
+    background-color: rgba(52, 40, 104, 0.05);
+    border-radius: 4px;
+    opacity: 0.75;
+
+    th {
+      // border: .07rem solid #eee !important;
+      // text-transform: uppercase;
+      vertical-align: middle;
+      color: $primary;
+      font-weight: 600;
+      padding-left: 1rem;
+      text-align: left;
+    }
+  }
+
+  tfoot {
+    background-color: rgba(52, 40, 104, 0.0075);
+  }
+
+  td {
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 1rem;
+    font-weight: 500;
+    border-top: 0;
+  }
+
+  > thead,
+  tbody,
+  tfoot {
+    > tr > th {
+      vertical-align: middle;
+    }
+
+    > tr > td {
+      vertical-align: middle;
+    }
+  }
+
+  > tbody {
+    > tr > th {
+      background-color: rgba(52, 40, 104, 0.05);
+      color: $primary;
+      font-weight: 600;
+      opacity: 0.75;
+      word-break: normal;
+    }
+
+    > tr > td.text-right > p {
+      text-align: right;
+      white-space: nowrap !important;
+    }
+
+    > tr > td.text-left > p {
+      text-align: left;
+    }
+
+    > tr > td > p {
+      white-space: nowrap !important;
+    }
+
+    > tr > td > p:last-child {
+      margin: 0;
+    }
+  }
+
+  &-bordered {
+    border: 0.07rem solid #eee !important;
+
+    > thead,
+    tbody,
+    tfoot {
+      > tr > th {
+        border-color: rgba(163, 168, 168, 0.2);
+      }
+
+      > tr > td {
+        border-color: rgba(163, 168, 168, 0.2);
+      }
+    }
+  }
+
+  &-striped {
+    > tbody > tr:nth-child(odd) > td,
+    > tbody > tr:nth-child(odd) > th {
+      background-color: rgba(242, 243, 243, 0.35);
+    }
+  }
+
+  &-condensed {
+    > tbody > tr > td {
+      vertical-align: middle;
+    }
+  }
+
+  &-hover {
+    > tbody > tr:hover > td,
+    > tbody > tr:hover > th {
+      // background-color: $white_40;
+      background-color: $white-lighter;
+    }
+  }
+}
+
+.table .td-actions a {
+  i {
+    padding: 0.3rem;
+    background-color: transparent;
+    color: rgba(52, 40, 104, 0.4);
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    &.info:hover,
+    &.info:focus,
+    &.info:active {
+      background-color: $info !important;
+      color: $white;
+      border: 1px solid $info !important;
+    }
+
+    &.edit:hover,
+    &.edit:focus,
+    &.edit:active {
+      background-color: $primary !important;
+      color: $white;
+      border: 1px solid $primary !important;
+    }
+
+    &.delete:hover,
+    &.delete:focus,
+    &.delete:active {
+      background-color: $danger !important;
+      color: $white;
+      border: 1px solid $danger !important;
+    }
+  }
+}
+
+table#js-announcement {
+  > tbody > tr > td {
+    vertical-align: top;
+  }
+}
+
+.text-ellipsis {
+  max-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-pdf {
+  width: inherit !important;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  tr {
+    height: 2.2rem !important;
+    border-color: $black-smoke !important;
+    border-bottom: 0.5px solid;
+  }
+
+  thead {
+    tr {
+      border-top: 0.5px solid;
+    }
+  }
+
+  thead {
+    background-color: rgba(52, 40, 104, 0.05);
+    border-radius: 4px;
+    opacity: 0.75;
+
+    th {
+      font-size: 0.7rem !important;
+      font-weight: 600;
+      vertical-align: middle;
+      color: $primary;
+      padding-left: 0.4rem;
+      text-align: left;
+      height: 2.2rem !important;
+    }
+  }
+
+  tfoot {
+    background-color: rgba(52, 40, 104, 0.0075);
+  }
+
+  td {
+    font-size: 0.7rem !important;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 0.4rem;
+    border-top: 0;
+    height: 2.2rem !important;
+  }
+
+  > thead,
+  tbody,
+  tfoot {
+    > tr > th {
+      vertical-align: middle;
+    }
+
+    > tr > td {
+      vertical-align: middle;
+    }
+  }
+
+  > tbody {
+    > tr > th {
+      background-color: rgba(52, 40, 104, 0.05);
+      color: $primary;
+      font-weight: 600;
+      opacity: 0.75;
+      word-break: normal;
+    }
+
+    > tr > td.text-right > p {
+      text-align: right;
+      white-space: nowrap !important;
+    }
+
+    > tr > td.text-left > p {
+      text-align: left;
+    }
+
+    > tr > td > p {
+      white-space: nowrap !important;
+    }
+
+    > tr > td > p:last-child {
+      margin: 0;
+    }
+  }
+
+  &-bordered {
+    border: 0.07rem solid #eee !important;
+
+    > thead,
+    tbody,
+    tfoot {
+      > tr > th {
+        border-color: rgba(163, 168, 168, 0.2);
+      }
+
+      > tr > td {
+        border-color: rgba(163, 168, 168, 0.2);
+      }
+    }
+  }
+
+  &-striped {
+    > tbody > tr:nth-child(odd) > td,
+    > tbody > tr:nth-child(odd) > th {
+      background-color: rgba(242, 243, 243, 0.35);
+    }
+  }
+
+  &-condensed {
+    > tbody > tr > td {
+      vertical-align: middle;
+    }
+  }
+
+  &-hover {
+    > tbody > tr:hover > td,
+    > tbody > tr:hover > th {
+      // background-color: $white_40;
+      background-color: $white-lighter;
+    }
+  }
+}

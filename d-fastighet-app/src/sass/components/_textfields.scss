@@ -1,0 +1,46 @@
+/*------------------------------------
+    Textfields
+------------------------------------*/
+
+div.dataTables_filter {
+  input {
+    color: $black;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 5px;
+    border-bottom: 1px solid;
+    border-color: $white-blight;
+
+    &:focus {
+      border-color: $primary;
+      border-radius: 0%;
+      border-bottom-width: 2px;
+    }
+
+    &-search {
+      color: $black;
+      background-color: transparent;
+      border: 0px;
+      border-radius: 5px;
+      border-bottom: 1px solid;
+      border-color: $white-blight;
+
+      &:focus {
+        border-color: $info;
+      }
+    }
+  }
+}
+
+.main-input {
+  color: $black;
+  background-color: transparent;
+  padding: 5px 35px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: $white-blight;
+
+  &:focus {
+    border-color: $primary;
+  }
+}

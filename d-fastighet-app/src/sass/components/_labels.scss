@@ -1,0 +1,30 @@
+/*------------------------------------
+    Labels
+------------------------------------*/
+
+label {
+  font-weight: 400;
+}
+
+.ks-label {
+  display: inline-block;
+  padding: 0.1rem 0.9rem;
+  min-width: 20px;
+  min-height: 20px;
+  vertical-align: middle;
+  color: $white;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.label-status {
+  font-size: 1rem;
+  text-align: center;
+  color: $white;
+  vertical-align: middle;
+  width: 80px;
+  height: 25px;
+  border-radius: 3px;
+}

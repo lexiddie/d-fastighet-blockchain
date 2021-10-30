@@ -1,0 +1,458 @@
+/*------------------
+    Buttons
+------------------*/
+
+button,
+input {
+  outline: none !important;
+}
+
+.btn-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  font-weight: 600;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+
+  img {
+    margin: 5px;
+  }
+
+  &-info {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: $info;
+      border-color: $info;
+    }
+  }
+
+  &-primary {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white !important;
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+
+  &-danger {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: $danger;
+      border-color: $danger;
+    }
+  }
+}
+
+.main-btn {
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  vertical-align: middle;
+  line-height: 1.3;
+  border-radius: 50px;
+  box-shadow: 0 1px 5px 1px rgba($shadow, 0.075);
+
+  &-mw-120 {
+    min-width: 120px;
+  }
+
+  &-default {
+    color: $white;
+    background-color: $primary;
+    border-color: $smoke;
+    border-radius: 5px;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: $white;
+      background-color: darken($smoke, 6%);
+      border-color: darken($smoke, 6%);
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($smoke, 35%);
+        border-color: lighten($smoke, 35%);
+      }
+    }
+  }
+
+  &-primary {
+    color: $white !important;
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      cursor: pointer;
+      color: $white;
+      background-color: darken($primary, 6%);
+      border-color: darken($primary, 6%);
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($primary, 35%);
+        border-color: lighten($primary, 35%);
+      }
+    }
+  }
+
+  &-second {
+    color: $white !important;
+    background-color: $primary;
+    border-color: $primary;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      cursor: pointer;
+      color: $white;
+      background-color: darken($primary, 6%);
+      border-color: darken($primary, 6%);
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($primary, 35%);
+        border-color: lighten($primary, 35%);
+      }
+    }
+  }
+
+  &-caution {
+    color: $white !important;
+    background-color: $orange !important;
+    border-color: $orange !important;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      cursor: pointer;
+      color: $white_90 !important;
+      background-color: lighten($orange, 35%);
+      border-color: lighten($orange, 35%);
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($primary, 35%);
+        border-color: lighten($primary, 35%);
+      }
+    }
+  }
+
+  &-info {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      cursor: pointer;
+      color: $white;
+      background-color: darken($info, 6%);
+      border-color: darken($info, 6%);
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($info, 35%);
+        border-color: lighten($info, 35%);
+      }
+    }
+  }
+
+  &-success {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      cursor: pointer;
+      color: $white;
+      background-color: darken($success, 6%);
+      border-color: darken($success, 6%);
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($success, 35%);
+        border-color: lighten($success, 35%);
+      }
+    }
+  }
+
+  &-warning {
+    color: $white;
+    background-color: $warning;
+    border-color: $warning;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      cursor: pointer;
+      color: $white;
+      background-color: darken($warning, 6%);
+      border-color: darken($warning, 6%);
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($warning, 35%);
+        border-color: lighten($warning, 35%);
+      }
+    }
+  }
+
+  &-danger {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      cursor: pointer;
+      color: $white;
+      background-color: darken($danger, 6%);
+      border-color: darken($danger, 6%);
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($danger, 35%);
+        border-color: lighten($danger, 35%);
+      }
+    }
+  }
+
+  &-link {
+    color: inherit;
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: darken($primary, 6%);
+      text-decoration: none;
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($primary, 35%);
+        border-color: lighten($primary, 35%);
+      }
+    }
+
+    i {
+      color: $smoke;
+    }
+  }
+
+  &-page {
+    padding: 0;
+    margin: 0;
+    color: $secondary;
+    background-color: transparent;
+    border-radius: 0;
+    border-color: $shadow;
+    border-width: 1;
+    cursor: pointer;
+    &.left {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    &.right {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  &-white {
+    color: inherit;
+    background-color: $white;
+    border: 1px solid $white-smoke;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: inherit;
+      border: 1px solid $white-blight;
+    }
+
+    &:active,
+    &.active {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset;
+    }
+
+    &.disabled {
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active[disabled],
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        background-color: lighten($white-smoke, 6%);
+        border-color: lighten($white-smoke, 6%);
+      }
+    }
+  }
+
+  &-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    text-align: center;
+    line-height: 1;
+    border-radius: 100%;
+  }
+
+  &-search {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  &.rounded {
+    border-radius: 50px !important;
+  }
+
+  .dropdown-content {
+    left: 0;
+    top: 36px;
+    text-align: left;
+  }
+
+  &-sm {
+    .dropdown-content {
+      top: 30px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.hidden-row-toggle,
+.fooicon {
+  text-align: center;
+  top: 4px;
+  font-family: 'Font Awesome\ 5 Free' !important;
+  font-weight: 900;
+  opacity: 0.75 !important;
+  cursor: pointer;
+}
+
+.fooicon-minus:before {
+  content: '\f056';
+}
+
+.fooicon-plus:before {
+  content: '\f055';
+}

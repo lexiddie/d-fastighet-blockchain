@@ -1,0 +1,8 @@
+export const AuthenticationActionTypes = {
+  SIGN_IN_START: 'SIGN_IN_START',
+  SIGN_IN_SUCCESS: 'SIGN_IN_SUCCESS',
+  SIGN_IN_FAILURE: 'SIGN_IN_FAILURE',
+
+  SET_INVALID: 'SET_INVALID',
+  SIGN_OUT: 'SIGN_OUT'
+};

@@ -1,0 +1,85 @@
+/*------------------------------------
+    Sass Variables
+------------------------------------*/
+
+//
+// Breakpoints
+//
+$g-2xs: 446px !default; // Double extra small devices (<=445px)
+// Extra small devices (portrait phones, <=575px)
+$g-sm: 576px !default; // Small devices (landscape phones, >=576 & <=767)
+$g-md: 768px !default; // Medium devices (tablets, >=768 & <=991)
+$g-lg: 992px !default; // Large devices (desktops, >=992 & <=1199)
+$g-xl: 1200px !default; // Extra large devices (large desktops, >=1200)
+
+//Pallets
+$primary: #3d8ba6;
+$secondary: #c2c2c2;
+$default: #744da9;
+
+$dark: #343a40;
+$black: #555555;
+$white-blur: #ffffff50;
+$black-smoke: #262626;
+$black_25: rgba(#20252b, 0.25);
+$black_50: rgba(#20252b, 0.5);
+$white: #ffffff;
+$white_25: rgba(255, 255, 255, 0.25);
+$white_40: rgba(255, 255, 255, 0.4);
+$white_50: rgba(255, 255, 255, 0.5);
+$white_80: rgba(255, 255, 255, 0.8);
+$white_90: rgba(255, 255, 255, 0.9);
+$white-light: #f9f9f9;
+$white-blight: #d2d2d2;
+$white-smoke: #e7eaec;
+$white-lighter: #f3f3f4;
+$red: #ff2800;
+$dark-red: #d50000;
+$green: #4caf50;
+$orange: #ff5722;
+
+$smoke: #c2c2c2;
+$shadow: rgba(52, 40, 104, 0.15);
+
+$info: #35a7ff;
+$success: #2ecc71;
+$warning: #ffa801;
+$danger: #ff5964;
+
+$gray: rgba(12, 12, 12, 0.12);
+$gray-dark: #999;
+
+$excel: #1f7244;
+
+// FONT
+$default-font-size: 1rem;
+$primary-font-family: 'Quicksand';
+
+// struct randevoo {
+// 	// Main Color Dark Blue
+// 	static let mainColor = UIColor(hex: "3d8ba6")
+// 	static let mainPink = UIColor(hex: "E91E63")
+// 	static let mainDarkRed = UIColor(hex: "74151d")
+// 	static let mainRed = UIColor(hex: "C62827")
+// 	static let mainBlack = UIColor(hex: "12171A")
+// 	static let mainDarkBlue = UIColor(hex: "143667")
+// 	static let mainLightBlue = UIColor(hex: "BBDEFB")
+// 	static let mainBlue = UIColor(hex: "03A9F4")
+// 	static let mainBlueDark = UIColor(hex: "2962FF")
+// 	static let mainBlueGrey = UIColor(hex: "677786")
+// 	static let mainGreyLight = UIColor(hex: "efefef")
+// 	static let mainGray = UIColor(hex: "8e8e92")
+// 	static let mainLight = UIColor(hex: "FEFEFE")
+// 	static let mainLightWhite = UIColor(hex: "FAFAFA")
+// 	static let mainWhiteGray = UIColor(hex: "DBDBDB")
+// 	static let mainLightGray = UIColor(hex: "eff0f4")
+// 	static let mainLightGrey = UIColor(hex: "CACACA")
+// 	static let mainDarkGrey = UIColor(hex: "EEEEEE")
+// 	static let mainDarkYellow = UIColor(hex: "F6BE00")
+// 	static let mainBackgroundBlue = UIColor(hex: "f7fbfd")
+// 	static let mainStatusRed = UIColor(hex: "f44336")
+// 	static let mainStatusGreen = UIColor(hex: "4CAF50")
+// 	static let mainStatusBlue = UIColor(hex: "2196F3")
+// 	static let mainStatusYellow = UIColor(hex: "FFD600")
+// 	static let backgroundGrey = UIColor(hex: "f5f5f5")
+// }

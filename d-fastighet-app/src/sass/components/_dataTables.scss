@@ -1,0 +1,94 @@
+/*------------------------------------
+    DataTable Customization
+------------------------------------*/
+.dataTables_wrapper {
+  select.form-control:not([size]):not([multiple]) {
+    height: initial;
+  }
+
+  .form-control {
+    height: initial;
+    padding-top: 0;
+  }
+
+  .dataTables_filter {
+    color: $black;
+  }
+
+  .dataTables_info {
+    color: $black;
+    margin-top: 15px;
+    padding: 6px 0 0 0 !important;
+    clear: both;
+    float: left;
+  }
+
+  .dataTables_processing {
+    color: $black;
+  }
+
+  .dataTables_paginate {
+    margin-top: 15px !important;
+    float: right;
+    color: $black;
+    text-align: right;
+  }
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  a {
+    display: inline-block;
+    color: $smoke;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    box-shadow: none !important;
+    cursor: pointer;
+
+    &:hover {
+      color: $black_50;
+      background-color: $smoke;
+      border-color: $smoke;
+    }
+  }
+
+  &.active {
+    a {
+      color: $black_50;
+      background-color: $smoke;
+      border-color: $smoke;
+    }
+  }
+}
+
+.dataTables_length {
+  color: $black;
+}
+
+table.table-bordered.dataTable tbody th,
+table.table-bordered.dataTable tbody td {
+  border-bottom-width: 1px;
+}
+
+.dataTables_length select {
+  display: block;
+  background: none !important;
+  border: 0px;
+  border-radius: 5px;
+  border-bottom: 1px solid;
+  border-color: $info;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
+  height: 30px !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding-top: 4px !important;
+  padding-left: 5px;
+  padding-right: 5px;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: textfield !important;
+}

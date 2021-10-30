@@ -1,0 +1,19 @@
+/*------------------------------------
+    Select
+------------------------------------*/
+
+.main-select {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  width: 180px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px 35px 5px 10px;
+  border: 1px solid;
+  border-color: $white-blight;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../../assets/arrow_down.png') 94% / 8% no-repeat transparent;
+}

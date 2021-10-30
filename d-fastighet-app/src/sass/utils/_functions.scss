@@ -1,0 +1,13 @@
+/*------------------------------------
+    Scss Functions
+------------------------------------*/
+
+@function parseInt($n) {
+    @if ($n==!important) {
+        @return !important
+    }
+    @else {
+        $rem-size: $n / 14px;
+        @return #{$rem-size}rem;
+    }
+}

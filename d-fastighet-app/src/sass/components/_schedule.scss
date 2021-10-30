@@ -1,0 +1,66 @@
+.class-timeline {
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    &_time {
+        width: 50px;
+        text-align: right;
+        line-height: 1;
+    }
+    &_info {
+        width: calc(100% - 85px);
+        @include px-to-rem(margin-top, -3px !important);
+
+        .remark {
+            transform: translate(0,5px);
+        }
+    }
+}
+
+.schedule {
+    tbody tr th {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: normal;
+        border: none;
+        font-size: 14px;
+    }
+    tbody tr td {
+        border: 1px solid $gray;
+        text-transform: uppercase;
+        font-weight: normal;
+        position: relative;
+        font-size: 15px;
+        height: 75px;
+        vertical-align: middle;
+        &:first-child {
+            border-left-width: 0px;
+        }
+        &:last-child {
+            border-right-width: 0px;
+        }
+    }
+
+    @media(max-width: $g-lg) {
+        tbody tr th {
+            font-size: 13px;
+            padding: 6px 3px;
+        }
+        tbody tr td {
+            font-size: 13px;
+            padding: 12px 3px;
+        }
+    }
+    
+    @media(max-width: $g-lg) {
+        tbody tr th {
+            font-size: 13px;
+            padding: 6px 3px;
+        }
+        tbody tr td {
+            font-size: 13px;
+            padding: 12px 3px;
+        }
+    }
+}
